@@ -3,8 +3,8 @@ package com.exemplo.classroom.service;
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import java.util.Optional;
-import com.exemplo.classroom.repository.ClassroomRepository; // <-- adicionado
-// ...existing code...
+import com.exemplo.classroom.repository.ClassroomRepository; 
+
 @Service
 public class ClassroomService {
 
@@ -15,5 +15,5 @@ public class ClassroomService {
         this.repository = repository;
     }
 
-    // ... resto do código
+
 }
