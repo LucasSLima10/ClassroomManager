@@ -57,34 +57,3 @@ Execute:
 
 mvn test
 
-
-
----
-
-Boas práticas aplicadas
-
-Separação de camadas (controlador, serviço, repositório)
-
-Inversão de dependência / injeção de dependência
-
-Tratamento de exceções padronizado
-
-Uso de DTOs (se houver) para controlar dados trafegados
-
-Validações (ex: campos obrigatórios)
-
-
-
----
-
-Próximas melhorias / planos futuros
-
-Implementar autenticação e autorização
-
-Paginação e filtros em endpoints de listagem
-
-Documentação automática de API (Swagger, OpenAPI)
-
-Upload / download de arquivos (ex: planilhas de alunos)
-
-Front-end web ou interface gráfica
