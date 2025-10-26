@@ -1,6 +1,4 @@
-Gerenciador de salas de aula / de turmas — projeto em Java para gerenciamento de alunos, turmas, professores etc.
-
-Visão geral
+  Gerenciador de salas de aula / de turmas — projeto em Java para gerenciamento de alunos, turmas, professores etc.
 
 Este projeto se propõe a facilitar operações comuns de gerenciamento escolar, como:
 
@@ -8,14 +6,11 @@ cadastro e consulta de turmas
 
 associação de alunos e professores a turmas
 
-CRUD (criar, ler, atualizar, deletar) de entidades como aluno, professor, turma
+CRUD (criar, ler, atualizar, deletar) de entidades como sala e reserva
 
-persistência via banco de dados (configuração via pom.xml)
+configurações do banco de dados (configuração via pom.xml)
 
-estrutura modular em camadas (model, repository, service, controller)
-
-
-O código é escrito em Java (utilizando Maven) e segue boas práticas de separação de responsabilidades.
+tipologia de projeto MVC (model, repository, service, controller)
 
 
 ---
@@ -26,34 +21,19 @@ Java (versão compatível conforme pom.xml)
 
 Maven para gerenciamento de dependências e build
 
-JPA / Hibernate (ou outro framework de persistência, conforme implementação)
+JPA / Hibernate
 
-Banco de dados relacional (via configuração externa)
+Banco de dados (mySQL)
 
-Design em camadas (model, repository, service, controller)
-[16:21, 26/10/2025] Lucas: Exemplos de uso (REST API)
+ Exemplos de uso (REST API)
 
-Método HTTP	Endpoint	Descrição
+ Descrição
 
-GET	/turmas	Listar todas as turmas
-POST	/turmas	Criar nova turma
-GET	/alunos/{id}	Obter dados de um aluno específico
-PUT	/alunos/{id}	Atualizar dados de aluno
-DELETE	/professores/{id}	Deletar professor
+Cadastrar salas em POST /salas
 
+Cadastrar reservas em POST /reservas
 
-(Ajuste esses exemplos conforme a real implementação do seu projeto.)
-
+Listar tudo em GET /salas e GET /reservas
 
 ---
-
-Testes
-
-A pasta src/test deve conter testes unitários ou de integração para service, repository e controller.
-
-Use frameworks como JUnit, Mockito, etc.
-
-Execute:
-
-mvn test
 
